@@ -1,0 +1,17 @@
+---
+title: posts index
+posts:
+  - displayTitle: Another Page, Displayed Title
+    link: anotherPage
+  - displayTitle: Temporal
+    link: temporal
+---
+
+<ul>
+{% for post in posts %}
+  <li><a href="posts/{{ post.link }}">{{ post.displayTitle }}</li>
+{% else %}
+  <li>This will display if the 'posts' collection is empty</li>
+{% endfor %}
+</ul>
+
