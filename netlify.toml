@@ -1,5 +1,5 @@
 [build]
-  publish = "_site"
+  publish = "public"
   command = """
     curl -fsSL https://deno.land/x/install/install.sh | sh && \
     /opt/buildhome/.deno/bin/deno run -A https://deno.land/x/lume/ci.ts \
