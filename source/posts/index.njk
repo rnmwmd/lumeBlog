@@ -9,7 +9,7 @@ posts:
 
 <ul>
 {% for post in posts %}
-  <li><a href="posts/{{ post.link }}">{{ post.displayTitle }}</li>
+  <li><a href="{{ post.link }}">{{ post.displayTitle }}</li>
 {% else %}
   <li>This will display if the 'posts' collection is empty</li>
 {% endfor %}
